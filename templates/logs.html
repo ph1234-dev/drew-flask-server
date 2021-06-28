@@ -1,0 +1,21 @@
+{% extends "index.html" %}
+
+{% block main_content %}
+  <div class="block-vertical" style="max-width: 70ch;">
+
+    <h5>{{owner}} Chatlogs</h5>
+
+    {% for log in logs%}
+      <div class="block-vertical" style="margin-top: 1rem;">
+        <span>Time: 2pm</span>
+        <div class="bloc-vertical">
+          <div>User</div>
+          <div>{{log.user}}</div>
+          &nbsp;
+          <div>Bot</div>
+          <div>{{log.bot}}</div>
+        </div>
+      </div>
+    {% endfor %}  
+  </div>    
+{% endblock%}

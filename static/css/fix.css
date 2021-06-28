@@ -1,0 +1,37 @@
+caption,
+table,
+th,
+td,
+tr,
+thead,
+tbody{
+  padding: 1rem;
+}
+
+table{
+  color: hsla(0,0%,21%,.9);
+  background-color: hsla(0,0%,92%,.9);
+  border: 2px solid hsla(0,0%,82%,.2);
+  border-radius: 3px;
+}
+
+table thead{
+  text-align: left;
+  text-transform: uppercase;
+  background-color: hsla(0,0%,88%,.9);
+}
+
+a{
+  text-decoration: none;
+  color: hsla(0,0%,24%,95)
+}
+
+table td{
+  font-size: .9rem;
+}
+
+table caption{
+  font-size: 2rem;
+  text-align: left;
+}
+

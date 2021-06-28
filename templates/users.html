@@ -1,0 +1,30 @@
+{% extends "index.html" %}
+
+{% block main_content %}
+
+
+  <table>
+    <caption>Tester Accounts </caption>
+    <thead>
+      <th>id</th>
+      <th>name</th>
+      <th>password</th>
+      <th>date created</th>
+      <th></th>
+    </thead>
+    
+    <tbody>
+      {# loop.index is a given variable to get the index of items looped#}
+      {% for user in result %}    
+        <tr >
+          <td>{{loop.index}} </td>
+          <td>{{user.name}}</td>
+          <td>none</td>
+          <td>none</td>
+          <td><a href="{{ url_for('view_users.display_user_log')}}"><button>View Log</button></a></td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+{% endblock %}

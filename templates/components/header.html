@@ -1,0 +1,21 @@
+<header class="header-sticky">
+  <nav class="nav-horizontal">
+    <div class="nav-toolbar">
+      <div class="nav-title-area">
+        <span class="nav-title-area-title"><a href="{{ url_for('index') }}">Chatbot</a></span>
+      </div>
+
+      <ul class="nav-menu-area">
+
+        {# namespace here in url_for('namespace',name) comes from the name of the blue print #}
+        <li class="nav-menu-item"><a role="li" href="{{url_for('view_users.display_list')}}">Users</a></li>
+        <li class="nav-menu-item"><a role="li" href="{{url_for('view_users.display_user_log')}}">Log Sample</a></li>
+        <li class="nav-menu-item"><a href="{{url_for('display_about')}}">About</a></li>
+      </ul>
+    
+    </div>
+    <!-- end nav toolbar -->
+   
+  </nav>
+</header>
+    

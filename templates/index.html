@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/index.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/fix.css') }}"/>
+  </head>
+  <body>
+    <div class="app-root">
+      {% include "components/header.html" %}
+      <main>
+        <div class="layout-vertical">
+            
+          {% block main_content %}
+            <h1>Main Page</h1>
+            <p>Nothing goes here</p>
+          {% endblock%}
+          
+          
+          {% block content %}
+          {% endblock  %}
+        </div>
+      </main>
+      {% include "components/footer.html" %}
+    </div>
+
+  </body>
+
+</html>
