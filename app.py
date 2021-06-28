@@ -59,7 +59,7 @@ app.add_url_rule('/about', view_func=display_about,methods=['GET'])
 app.add_url_rule('/app', 'index',load_html,methods=['GET'])
 app.register_blueprint(view_users_blueprint,endpoint="v",url_prefix="/view")
 
-app.add_url_rule('/', 'start', start,methods=['GET'])
+app.add_url_rule('/', 'index', load_html,methods=['GET'])
 
 app.register_blueprint(user_account_blueprint,url_prefix="/api/user")
 
