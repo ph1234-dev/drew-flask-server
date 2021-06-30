@@ -7,11 +7,17 @@ from psycopg2 import pool
 class DatabaseManager:
 
     def __init__(self):
-        self.__HOST="localhost"
+        # self.__HOST="localhost"
+        # self.__PORT="5432"
+        # self.__DATABASE="drew"
+        # self.__USER="postgres"
+        # self.__PASSWORD="1234"
+
+        self.__HOST="ec2-3-218-71-191.compute-1.amazonaws.com"
         self.__PORT="5432"
-        self.__DATABASE="drew"
-        self.__USER="postgres"
-        self.__PASSWORD="1234"
+        self.__DATABASE="d2g6g4gbupub29"
+        self.__USER="awuazfbbmtmqia"
+        self.__PASSWORD="7b214e8aa53bef1d0dbbd3d1524df7443f85ba1470fb1cac249980ea74f83933"
 
         self.pool = None
 
